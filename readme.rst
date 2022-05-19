@@ -16,10 +16,12 @@ Usage
 -----
 
 #1 On the django admin panel create a driver and its steps.
+
 #2 Load the tag and render the javascript:
 ``{% load driverjs %}``
 
 ``{%setup_driver 'your_driver_slug' %}``
+
 #3 Choose a place to start it with:
 ``[your_driver_slug]_driver.start();``
 So if your driver's slug is new_features, a new variable will be declared: ``new_features_driver``
