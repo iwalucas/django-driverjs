@@ -1,6 +1,6 @@
 django-driverjs
 =================
-django-driverjs is a wrapper for the <a href="https://github.com/kamranahmedse/driver.js">Driver.js</a> library.
+django-driverjs is a wrapper for the [Driver.js](https://github.com/kamranahmedse/driver.js) library.
 
 Installation
 ------------
