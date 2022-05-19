@@ -22,12 +22,12 @@ Usage
 
 ``<link rel="stylesheet" href="{%static 'Driverjs/css/driver.min.css'%}">``
 
-#2 Load the tag and render the javascript:
+#3 Load the tag and render the javascript:
 ``{% load driverjs %}``
 
 ``{%setup_driver 'your_driver_slug' %}``
 
-#3 Choose a place to start it with:
+#4 Choose a place to start it with:
 ``[your_driver_slug]_driver.start();``
 So if your driver's slug is new_features, a new variable will be declared: ``new_features_driver``
 
