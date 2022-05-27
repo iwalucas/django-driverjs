@@ -10,7 +10,7 @@ Driver = get_model('Driverjs', 'Driver')
 register = template.Library()
 
 @register.simple_tag(takes_context=True)
-def setup_driver(context, slug):
+def setup_driver(context, slug,tag=True):
     ctx = context.flatten()
     try:
         driver = Driver.objects.get(slug=slug)
@@ -50,5 +50,6 @@ def setup_driver(context, slug):
         ds_t['popover'] = popover
         driver_steps.append(ds_t)
     ctx['driver_steps'] = driver_steps
+    ctx['tag'] = tag
     result = render_to_string('Driverjs/driver_js.html', ctx)
     return result
